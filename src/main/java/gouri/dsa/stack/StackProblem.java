@@ -9,12 +9,12 @@ public class StackProblem {
         System.out.println("Stack Problems");
         // Story Id: https://github.com/Dilip9/dsa/issues/14
         /**
-         * Problem on Monotonuic Stack
+         * Basic Problem on Monotonic Stack
          * Next Greater Element
          * Next Smaller Element
          * Previous Greater Element
          * Previous Smaller Element
-         * Largest Rectangle in Histogram
+         * Daily Temperatures
          *
          * **/
         int[] arr = {4, 5, 2, 10, 8};
@@ -23,6 +23,31 @@ public class StackProblem {
         Arrays.stream(greaterElement).forEach(n -> System.out.print(n+" "));
         System.out.println();
         Arrays.stream(smallerElement).forEach(n -> System.out.print(n+" "));
+
+
+        /**
+         *  Medium Problem on Monotonic Stack
+         *  Stock Span
+         *  Remove K Digits
+         *  Asteroid Collision
+         *  Sum of Subarray Minimums
+         *  Online Stock Span
+         *
+         * **/
+
+
+        /**
+         * Hard Problem on Monotonic Stack
+         * Largest Rectangle in Histogram
+         * Maximal Rectangle
+         * Trapping Rain Water
+         * 132 Pattern
+         * Sum of Subarray Ranges
+         * Sum of Subarray Minimums
+         *
+         *
+         */
+
     }
     public static int[] nextGreaterElement(int[] arr){
         int[] answer = new int[arr.length];
