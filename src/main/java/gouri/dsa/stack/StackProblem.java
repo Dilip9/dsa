@@ -23,6 +23,11 @@ public class StackProblem {
         Arrays.stream(greaterElement).forEach(n -> System.out.print(n+" "));
         System.out.println();
         Arrays.stream(smallerElement).forEach(n -> System.out.print(n+" "));
+        System.out.println();
+        int[] previousGreaterElement = previousGreaterElement(arr);
+        Arrays.stream(previousGreaterElement).forEach(n -> System.out.print(n+" "));
+//        int[] previousSmallerElement = previousSmallerElement(arr);
+//        Arrays.stream(previousSmallerElement).forEach(n -> System.out.print(n+" "));
 
 
         /**
@@ -77,6 +82,26 @@ public class StackProblem {
             stack.push(arr[i]);
         }
         return result;
+
+    }
+
+    public static int[] previousGreaterElement(int[] arr){
+        int n= arr.length;
+        int[] answer = new int[n];
+        for(int i=0;i<n;i++){
+            answer[i] = -1;
+        }
+        Stack<Integer> stack = new Stack<>();
+        for(int i=0;i<n;i++){
+            while(!stack.isEmpty() && stack.peek() <= arr[i]){
+                stack.pop();
+            }
+            if(!stack.isEmpty()) {
+                answer[i] = stack.peek();
+            }
+            stack.push(arr[i]);
+        }
+        return answer;
 
     }
 }
