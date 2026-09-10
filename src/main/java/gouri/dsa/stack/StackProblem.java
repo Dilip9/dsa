@@ -62,6 +62,14 @@ public class StackProblem {
          *
          */
 
+        StackHardProblem stackHardProblem = new StackHardProblem();
+        stackHardProblem.largestRectangleInHistogram();
+        stackHardProblem.maximalRectangle();
+        stackHardProblem.trappingRainWater();
+        stackHardProblem.pattern132();
+        stackHardProblem.sumOfSubarrayRanges();
+        stackHardProblem.sumOfSubarrayMinimums();
+
     }
     public static int[] nextGreaterElement(int[] arr){
         int[] answer = new int[arr.length];
