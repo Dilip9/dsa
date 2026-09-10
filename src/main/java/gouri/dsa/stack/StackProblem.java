@@ -46,9 +46,10 @@ public class StackProblem {
         stackMediumProblem.asteroidCollision();
         stackMediumProblem.sumOfSubarrayMinimums();
         stackMediumProblem.onlineStockSpan();
-        stackMediumProblem.largestRectangleInHistogram();
-        stackMediumProblem.maximalRectangle();
-        stackMediumProblem.trappingRainWater();
+        stackMediumProblem.MinAddToMakeValidParentheses();
+        stackMediumProblem.nearestSmallerTower();
+        stackMediumProblem.nextElementWithGreaterFrequency();
+
 
         /**
          * Hard Problem on Monotonic Stack
@@ -67,8 +68,11 @@ public class StackProblem {
         stackHardProblem.maximalRectangle();
         stackHardProblem.trappingRainWater();
         stackHardProblem.pattern132();
-        stackHardProblem.sumOfSubarrayRanges();
-        stackHardProblem.sumOfSubarrayMinimums();
+        stackHardProblem.histogramLargestRectangle();
+        stackHardProblem.sumOfMaximumsOfAllSubarrays();
+        stackHardProblem.sumOfMinimumsOfAllSubarrays();
+        stackHardProblem.removeDuplicateLetters();
+        stackHardProblem.maxOfMinForEveryWindowSize();
 
     }
     public static int[] nextGreaterElement(int[] arr){
