@@ -6,6 +6,7 @@ import java.util.Stack;
 
 public class StackProblem {
     public static void main(String[] args) {
+
         System.out.println("Stack Problems");
         // Story Id: https://github.com/Dilip9/dsa/issues/14
         /**
@@ -39,7 +40,15 @@ public class StackProblem {
          *  Online Stock Span
          *
          * **/
-
+        StackMediumProblem stackMediumProblem = new StackMediumProblem();
+        stackMediumProblem.stockSpan();
+        stackMediumProblem.removeKDigits();
+        stackMediumProblem.asteroidCollision();
+        stackMediumProblem.sumOfSubarrayMinimums();
+        stackMediumProblem.onlineStockSpan();
+        stackMediumProblem.largestRectangleInHistogram();
+        stackMediumProblem.maximalRectangle();
+        stackMediumProblem.trappingRainWater();
 
         /**
          * Hard Problem on Monotonic Stack
